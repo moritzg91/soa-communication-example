@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<div class="container" style="margin-top:50px">
+    <div class="hero-unit">
+        <h1>Multiply something!</h1>
+        <div>
+            <form action='/multiply' method='post'>
+                <input type='text' name='lhs' placeholder='LHS' /><br>
+                <input type='text' name='rhs' placeholder='RHS' /><br>
+                <input type='submit' value='Go!' /><br>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock %}
