@@ -1,20 +1,20 @@
-### Setup
+## Setup
 
-# Install Dependencies
+### Install Dependencies
 - virtualenv venv
 - source venv/bin/activate
 - pip install -r requirements.txt
 
-# Start Message Broker
+### Start Message Broker
 - sudo rabbitmq server
 
-# Start worker
+### Start worker
 - cd receiver/app
 - celery -A tasks worker --loglevel=info
 
-# Start server
+### Start server
 - cd sender
 - python server.py
 
-# Test it!
+### Test it!
 Navigate your browser to localhost:5001. When you submit the form, the *sender* submits the mult task to the worker, which processes it and returns the result. 
